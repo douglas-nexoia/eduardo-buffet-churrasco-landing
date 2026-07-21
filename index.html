@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Eduardo Buffet de Churrasco & Fogo de Chão | Jundiaí, Campo Limpo & Região</title>
+  <meta name="description" content="Buffet de churrasco em domicílio e Fogo de Chão em Jundiaí, Campo Limpo Paulista, Várzea Paulista e Jarinu. Carnes nobres, rechauds de inox, acompanhamentos artesanais e equipe completa para aniversários, casamentos e empresas.">
+  <meta name="keywords" content="buffet de churrasco, fogo de chão, churrasco em domicilio, churrasqueiro jundiai, buffet churrasco campo limpo paulista, churrasco varzea paulista, churrasco jarinu, costela de fogo de chao">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Eduardo Buffet de Churrasco & Fogo de Chão">
+  <meta property="og:description" content="A verdadeira experiência gastronômica do churrasco no seu evento. Cuidamos de tudo para você curtir sem preocupações.">
+  <meta property="og:image" content="assets/images/hero_costela.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Gatilho de Escassez & Agenda) -->
+  <div class="top-announcement-bar">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <span><strong>Agenda Aberta:</strong> Poucas datas disponíveis para sábados e domingos do próximo mês em Jundiaí e região.</span>
+    <a href="#cardapios" class="announcement-link">Verificar Disponibilidade &rarr;</a>
+  </div>
+
+  <!-- ==========================================================================
+       1. CABEÇALHO (NAVBAR)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="header-logo">
+        <img src="assets/images/logo.png" alt="Eduardo Buffet de Churrasco Logo" class="logo-img">
+        <div class="logo-text">
+          Eduardo
+          <span>Buffet de Churrasco</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#cardapios" class="nav-link" id="nav-item-cardapios">Cardápios</a>
+        <a href="#galeria" class="nav-link" id="nav-item-galeria">Fotos Reais</a>
+        <a href="#como-funciona" class="nav-link" id="nav-item-como-funciona">Como Funciona</a>
+        <a href="#avaliacoes" class="nav-link" id="nav-item-avaliacoes">Avaliações</a>
+        <a href="#faq" class="nav-link" id="nav-item-faq">FAQ</a>
+      </nav>
+
+      <button class="btn btn-wa nav-cta" data-wa-type="hero" id="btn-header-wa">
+        <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento
+      </button>
+
+      <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav" id="mobile-menu-drawer">
+    <a href="#sobre" class="nav-link">Sobre Nós</a>
+    <a href="#cardapios" class="nav-link">Cardápios & Pacotes</a>
+    <a href="#galeria" class="nav-link">Fotos Reais dos Eventos</a>
+    <a href="#como-funciona" class="nav-link">Como Funciona</a>
+    <a href="#locais" class="nav-link">Regiões Atendidas</a>
+    <a href="#avaliacoes" class="nav-link">Avaliações de Clientes</a>
+    <a href="#faq" class="nav-link">Dúvidas Frequentes</a>
+    <button class="btn btn-wa btn-block pulse-glow" data-wa-type="hero" id="btn-mobile-wa">
+      <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       2. HERO SECTION (HARMONIZADA & CTA ALTO)
+       ========================================================================== -->
+  <section class="hero" id="sobre">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-location-badge">
+          <i class="fa-solid fa-location-dot"></i> Campo Limpo Paulista, Jundiaí, Várzea Paulista, Jarinu e Região
+        </div>
+
+        <h1 class="hero-title">
+          A Verdadeira Experiência do <span class="hero-title-highlight">Churrasco & Fogo de Chão</span> no Seu Evento.
+        </h1>
+
+        <p class="hero-subtitle">
+          Cuidamos de tudo — da brasa ao prato —, com carnes nobres, rechauds de inox e equipe uniformizada para você aproveitar seus convidados.
+        </p>
+
+        <!-- Inline Badges -->
+        <div class="hero-badges-inline">
+          <span class="badge-chip"><i class="fa-solid fa-drumstick-bite"></i> Cortes Nobres Selecionados</span>
+          <span class="badge-chip"><i class="fa-solid fa-user-tie"></i> Equipe Uniformizada</span>
+          <span class="badge-chip"><i class="fa-solid fa-clock"></i> Pontualidade & Fartura</span>
+        </div>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-wa pulse-glow" data-wa-type="hero" id="btn-hero-main-cta">
+            <i class="fa-brands fa-whatsapp"></i> Quero Orçamento sem Compromisso no WhatsApp
+          </button>
+        </div>
+
+        <div class="hero-guarantee-note">
+          <i class="fa-solid fa-shield-halved text-fire"></i> Resposta rápida em poucos minutos pelo WhatsApp
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-card">
+          <img src="assets/images/real_hero_costela.jpg" alt="Costela de Fogo de Chão em foto real de evento ao ar livre" id="hero-img-costela">
+          
+          <div class="hero-floating-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="hero-floating-rating">
+              <span class="hero-floating-text">Nota 5.0 no Google</span>
+              <small style="color: rgba(255,255,255,0.6);">+150 Eventos Realizados</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. SEÇÃO "COMO FUNCIONA" (ELIMINANDO A MENTIRA DE QUE DÁ TRABALHO)
+       ========================================================================== -->
+  <section class="section-padding how-it-works" id="como-funciona">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Zero Estresse no Seu Evento</span>
+        <h2 class="section-title">Como Funciona o Nosso Serviço</h2>
+        <p class="section-subtitle">
+          Fazer um churrasco inesquecível não precisa te dar dor de cabeça. Em apenas 3 passos simples, nós transformamos sua festa em uma celebração épica.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Passo 1 -->
+        <div class="step-card">
+          <span class="step-number">01</span>
+          <div class="step-icon">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <h3 class="step-title">Você Escolhe o Cardápio</h3>
+          <p class="step-desc">
+            Selecione o pacote ideal para o estilo da sua festa e o número de convidados. Montamos opções sob medida para a sua necessidade.
+          </p>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="step-card">
+          <span class="step-number">02</span>
+          <div class="step-icon">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+          </div>
+          <h3 class="step-title">Nós Levamos Tudo</h3>
+          <p class="step-desc">
+            Chegamos antecedência trazendo carnes selecionadas, acompanhamentos artesanais, rechauds de inox, carvão, lenha e utensílios profissionais.
+          </p>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="step-card">
+          <span class="step-number">03</span>
+          <div class="step-icon">
+            <i class="fa-solid fa-glass-water-droplet"></i>
+          </div>
+          <h3 class="step-title">Você Aproveita a Festa</h3>
+          <p class="step-desc">
+            Assamos e servimos seus convidados com sorriso no rosto e muita fartura. No final, deixamos toda a área de apoio limpa e organizada.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SEÇÃO "OPÇÕES DE PACOTES E CARDÁPIOS" & CALCULADORA
+       ========================================================================== -->
+  <section class="section-padding packages-section" id="cardapios">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag section-tag-dark"><i class="fa-solid fa-fire"></i> Gastronomia de Elite</span>
+        <h2 class="section-title section-title-dark">Cardápios & Opções de Serviços</h2>
+        <p class="section-subtitle section-subtitle-dark">
+          Escolha o nível de experiência ou utilize a calculadora abaixo para estimar seu orçamento sob medida.
+        </p>
+      </div>
+
+      <!-- Calculadora Rápida de Convidados -->
+      <div class="calc-container" id="calculadora">
+        <h3 class="calc-title"><i class="fa-solid fa-calculator text-fire"></i> Simulador Rápido de Orçamento</h3>
+        <p class="calc-subtitle">Selecione o número de convidados e o estilo do seu evento para ver uma estimativa em 1 clique:</p>
+        
+        <div class="calc-steps">
+          <div>
+            <span class="calc-label">1. Número de Convidados:</span>
+            <div class="calc-options" id="calc-guests-group">
+              <button type="button" class="calc-btn active" data-guests="20-30">20 a 30 pessoas</button>
+              <button type="button" class="calc-btn" data-guests="30-50">30 a 50 pessoas</button>
+              <button type="button" class="calc-btn" data-guests="50-80">50 a 80 pessoas</button>
+              <button type="button" class="calc-btn" data-guests="100+">100+ pessoas</button>
+            </div>
+          </div>
+          <div>
+            <span class="calc-label">2. Estilo do Evento:</span>
+            <div class="calc-options" id="calc-type-group">
+              <button type="button" class="calc-btn active" data-type="Aniversário / Festa Privada">Aniversário</button>
+              <button type="button" class="calc-btn" data-type="Casamento / Bodas">Casamento</button>
+              <button type="button" class="calc-btn" data-type="Confraternização Corporativa">Corporativo</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-result-box">
+          <div class="calc-result-info">
+            <span class="calc-result-title" id="calc-result-heading">Festa para 20 a 30 pessoas (Aniversário)</span>
+            <span class="calc-result-detail" id="calc-result-detail">🥩 ~12kg a 15kg de Carnes Nobres • 🥗 Buffet completo em Rechauds Inox • 👨‍🍳 1 Churrasqueiro + Staff</span>
+          </div>
+          <button class="btn btn-wa pulse-glow" id="calc-wa-btn">
+            <i class="fa-brands fa-whatsapp"></i> Receber Orçamento Deste Pacote
+          </button>
+        </div>
+      </div>
+
+      <div class="packages-grid">
+        
+        <!-- CARD 1 -->
+        <div class="package-card" id="card-mao-de-obra">
+          <img src="assets/images/churrasco_servindo.png" alt="Churrasqueiro fatiando picanha" class="package-img">
+          <div class="package-header">
+            <h3 class="package-title">Mão de Obra Master</h3>
+            <p class="package-desc">Ideal para quem prefere comprar as próprias carnes mas exige um churrasco perfeito feito por especialistas.</p>
+          </div>
+          <div class="package-body">
+            <span class="package-includes-title">O que está incluso:</span>
+            <ul class="package-list">
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Churrasqueiro especialista no comando da grelha</span></li>
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Ajudantes / Garçons qualificados</span></li>
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Utensílios profissionais (tábuas, facas, pegadores)</span></li>
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Preparo, corte técnico e atendimento por até 5h</span></li>
+            </ul>
+            <div class="package-ideal">
+              <strong>Ideal para:</strong> Almoços de família, reuniões em chácaras e pequenas recepções.
+            </div>
+          </div>
+          <div class="package-footer">
+            <button class="btn btn-outline-dark btn-block" data-wa-type="mao-de-obra" id="btn-pkg-mao-de-obra">
+              <i class="fa-brands fa-whatsapp"></i> Consultar Diária
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2 (O Mais Vendido) -->
+        <div class="package-card popular" id="card-tradicional">
+          <span class="badge-popular">O Mais Vendido</span>
+          <img src="assets/images/real_buffet.png" alt="Mesa de buffet de churrasco real com rechauds quentes" class="package-img">
+          <div class="package-header">
+            <h3 class="package-title">Buffet Churrasco Tradicional</h3>
+            <p class="package-desc">Fartura e praticidade completa. Variedade de carnes nobres e acompanhamentos caseiros fresquinhos.</p>
+          </div>
+          <div class="package-body">
+            <span class="package-includes-title">O que está incluso:</span>
+            <ul class="package-list">
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Contrafilé, Picanha, Linguiça Artesanal e Frango</span></li>
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Pão de Alho Crocante e Queijo Coalho com Melaço</span></li>
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Arroz, Farofa Caseira, Vinagrete e Salada Tropical</span></li>
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Mesa de Buffet montada em Rechauds Quentes de Inox</span></li>
+            </ul>
+            <div class="package-ideal">
+              <strong>Ideal para:</strong> Aniversários, formaturas e confraternizações em geral.
+            </div>
+          </div>
+          <div class="package-footer">
+            <button class="btn btn-wa btn-block" data-wa-type="tradicional" id="btn-pkg-tradicional">
+              <i class="fa-brands fa-whatsapp"></i> Ver Opções de Cardápio
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3 (Fogo de Chão - Carro-Chefe) -->
+        <div class="package-card" id="card-fogo-de-chao">
+          <img src="assets/images/real_fogo_de_chao.png" alt="Costela de Fogo de Chão real assada no espeto" class="package-img">
+          <div class="package-header">
+            <h3 class="package-title">Fogo de Chão & Defumados</h3>
+            <p class="package-desc">O verdadeiro show gastronômico no seu evento. Sabor inigualável e impacto visual inesquecível.</p>
+          </div>
+          <div class="package-body">
+            <span class="package-includes-title">O que está incluso:</span>
+            <ul class="package-list">
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Costela Bovina inteira assada lentamente no Fogo de Chão</span></li>
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Pork Belly / Pernil Defumado com Dry Rub exclusivo</span></li>
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Cortes nobres fatiados e servidos na hora pela equipe</span></li>
+              <li class="package-item"><i class="fa-solid fa-check"></i> <span>Acompanhamentos artesanais gourmet & estrutura cênica</span></li>
+            </ul>
+            <div class="package-ideal">
+              <strong>Ideal para:</strong> Casamentos, festas de 40/50 anos, eventos corporativos e chácaras.
+            </div>
+          </div>
+          <div class="package-footer">
+            <button class="btn btn-fire btn-block" data-wa-type="fogo-de-chao" id="btn-pkg-fogo-de-chao">
+              <i class="fa-brands fa-whatsapp"></i> Orçamento Fogo de Chão
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. SEÇÃO "DIFERENCIAIS & NÍVEL DE QUALIDADE"
+       ========================================================================== -->
+  <section class="section-padding quality-section" id="diferenciais">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-award"></i> O Padrão Eduardo</span>
+        <h2 class="section-title">Por Que Nosso Buffet É Diferente?</h2>
+        <p class="section-subtitle">
+          Fugimos do comum. Não somos um buffet amador com travessas improvisadas. Levamos uma verdadeira estrutura de restaurante para o seu local.
+        </p>
+      </div>
+
+      <div class="quality-grid">
+        <div class="quality-card">
+          <div class="quality-icon"><i class="fa-solid fa-bowl-food"></i></div>
+          <h3 class="quality-title">Apresentação Impecável</h3>
+          <p class="quality-desc">
+            Servimos todos os acompanhamentos quentes em rechauds banho-maria de aço inox brilhantes. Comida quente do primeiro ao último convidado.
+          </p>
+        </div>
+
+        <div class="quality-card">
+          <div class="quality-icon"><i class="fa-solid fa-cow"></i></div>
+          <h3 class="quality-title">Procedência & Cortes Nobres</h3>
+          <p class="quality-desc">
+            Carnes com certificação de origem, murchamento ideal e linguiça artesanal de verdade. Nada de cortes duros ou temperos industrializados.
+          </p>
+        </div>
+
+        <div class="quality-card">
+          <div class="quality-icon"><i class="fa-solid fa-users-gear"></i></div>
+          <h3 class="quality-title">Equipe Treinada e Uniformizada</h3>
+          <p class="quality-desc">
+            Profissionais educados, atenciosos e prontos para servir com simpatia. Cuidam da reposição constante das mesas e da higiene do local.
+          </p>
+        </div>
+      </div>
+
+  <!-- ==========================================================================
+       REAL PHOTO GALLERY (FOTOS REAIS DOS NOSSOS EVENTOS)
+       ========================================================================== -->
+  <section class="section-padding gallery-section" id="galeria">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag section-tag-dark"><i class="fa-solid fa-camera"></i> Bastidores Reais</span>
+        <h2 class="section-title section-title-dark">Galeria de Eventos Reais</h2>
+        <p class="section-subtitle section-subtitle-dark">
+          Sem fotos de banco de imagem genéricas. Veja a estrutura real que levamos para as festas e chácaras da região.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="assets/images/real_hero_costela.jpg" alt="Costela de Fogo de Chão no espeto real em evento">
+          <div class="gallery-caption">Fogo de Chão em Chácara - Jarinu / SP</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/real_buffet.png" alt="Mesa de buffet real com rechauds inox">
+          <div class="gallery-caption">Buffet Completo em Rechauds - Jundiaí / SP</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/real_fogo_de_chao.png" alt="Costela bovina inteira no Fogo de Chão">
+          <div class="gallery-caption">Costela Bovina Inteira na Brasa</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/churrasco_servindo.png" alt="Assador fatiando picanha na hora">
+          <div class="gallery-caption">Corte e Atendimento Profissional na Hora</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROVA DE COBERTURA LOCAL (LOCAIS ATENDIDOS)
+       ========================================================================== -->
+  <section class="section-padding locations-section" id="locais">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> Atendimento Regional</span>
+        <h2 class="section-title">Cidades & Locais Onde Atendemos com Frequência</h2>
+        <p class="section-subtitle">
+          Já realizamos eventos nos principais condomínios residenciais, sítios e chácaras de festas de toda a região.
+        </p>
+      </div>
+
+      <div class="locations-grid">
+        <div class="location-card">
+          <h3 class="location-city"><i class="fa-solid fa-location-dot"></i> Campo Limpo Paulista & Várzea</h3>
+          <p class="location-places">Atendimento completo em residências, condomínios fechados (como Botujuru, Figueira Branca) e chácaras de eventos por toda a cidade.</p>
+        </div>
+
+        <div class="location-card">
+          <h3 class="location-city"><i class="fa-solid fa-location-dot"></i> Jundiaí & Região</h3>
+          <p class="location-places">Chácaras e condomínios tradicionais (Medeiros, Eloy Chaves, Malota, Engordadouro, Caxambu, Terras de São Carlos e Itupeva).</p>
+        </div>
+
+        <div class="location-card">
+          <h3 class="location-city"><i class="fa-solid fa-location-dot"></i> Jarinu & Franco da Rocha</h3>
+          <p class="location-places">Foco em grandes eventos de Fogo de Chão em sítios, chácaras de aluguel para finais de semana e confraternizações em geral.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. PROVA SOCIAL & DEPOIMENTOS
+       ========================================================================== -->
+  <section class="section-padding testimonials-section" id="avaliacoes">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-star"></i> 100% de Aprovação</span>
+        <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+        <p class="section-subtitle">
+          Veja a opinião real de quem contratou o Eduardo Buffet de Churrasco para marcar datas especiais.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Depoimento 1 -->
+        <div class="testimonial-card">
+          <div class="stars" style="margin-bottom: 1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "Contratei o Eduardo para o aniversário do meu marido em uma chácara em Jarinu. A costela de fogo de chão foi o comentário da festa toda! Muita fartura e equipe extremamente educada."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CM</div>
+            <div class="author-info">
+              <span class="author-name">Camila M.</span>
+              <span class="author-location">Jundiaí / SP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="testimonial-card">
+          <div class="stars" style="margin-bottom: 1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "Serviço impecável. Não tive preocupação nenhuma no dia do evento. A carne veio no ponto perfeito e a mesa dos rechauds ficou linda. Recomendo de olhos fechados!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RS</div>
+            <div class="author-info">
+              <span class="author-name">Roberto S.</span>
+              <span class="author-location">Campo Limpo Paulista / SP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="testimonial-card">
+          <div class="stars" style="margin-bottom: 1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "Fizemos a confraternização de fim de ano da nossa empresa com o Eduardo e foi um sucesso total. Todos elogiaram o pão de alho e a picanha. Nota 10 em pontualidade!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MA</div>
+            <div class="author-info">
+              <span class="author-name">Marcelo A.</span>
+              <span class="author-location">Várzea Paulista / SP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. FAQ (PERGUNTAS FREQUENTES - QUEBRANDO OBJEÇÕES)
+       ========================================================================== -->
+  <section class="section-padding faq-section" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Esclareça Suas Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-subtitle">
+          Tudo o que você precisa saber antes de agendar a data do seu evento conosco.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <!-- Q1 -->
+        <div class="faq-item active">
+          <button class="faq-question" id="faq-q1">
+            <span>Qual o número mínimo de pessoas para contratar o buffet?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Trabalhamos com pacotes sob medida a partir de 20 a 30 pessoas. Para eventos menores, temos opções flexíveis de taxa mínima ou o serviço de Mão de Obra Master com assador profissional.
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q2">
+            <span>Quais cidades e regiões vocês atendem?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Atendemos diariamente Campo Limpo Paulista, Várzea Paulista, Jundiaí, Jarinu, Franco da Rocha e condomínios/chácaras de toda a região do Aglomerado Urbano de Jundiaí.
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q3">
+            <span>O que exatamente está incluso no serviço de buffet completo?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Nosso buffet completo inclui todas as carnes preparadas no local, acompanhamentos quentes e frios, carvão/lenha, churrasqueiro especialista, ajudantes/garçons uniformizados e a montagem do buffet em rechauds térmicos de inox.
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q4">
+            <span>Como faço para reservar a data e garantir meu orçamento?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            É muito simples: basta clicar em qualquer botão desta página para conversar diretamente com o Eduardo pelo WhatsApp. Informando a data aproximada e o número de convidados, enviamos uma proposta detalhada na hora.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. RODAPÉ (FOOTER) & CTA FIXO
+       ========================================================================== -->
+  <section class="section-padding cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-box">
+        <h2 class="cta-banner-title">Garanta a Sua Data Antes que Fique Sem Horário!</h2>
+        <p class="cta-banner-desc">
+          Nossa agenda de finais de semana preenche com antecedência. Fale direto com o Eduardo no WhatsApp e monte o cardápio sob medida para o seu evento.
+        </p>
+        <button class="btn btn-wa pulse-glow" data-wa-type="hero" id="btn-footer-cta-box">
+          <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp Agora
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="assets/images/logo.png" alt="Eduardo Buffet de Churrasco Logo" class="logo-img">
+            <div class="logo-text">
+              Eduardo
+              <span>Buffet de Churrasco</span>
+            </div>
+          </a>
+          <p class="footer-about">
+            Especialista em Churrasco de Fogo de Chão, Defumados e Cortes Nobres. Atendimento profissional para residências, chácaras e eventos corporativos.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegação Rápida</h4>
+          <div class="footer-links">
+            <a href="#sobre">Sobre o Eduardo</a>
+            <a href="#cardapios">Pacotes e Cardápios</a>
+            <a href="#como-funciona">Como Funciona</a>
+            <a href="#diferenciais">Nossos Diferenciais</a>
+            <a href="#avaliacoes">Depoimentos</a>
+            <a href="#faq">Perguntas Frequentes</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Atendimento & Região</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Campo Limpo Pta, Várzea, Jundiaí e Jarinu</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp: (11) 97212-9597</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Atendimento: Segunda a Domingo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Eduardo Buffet de Churrasco. Todos os direitos reservados. Design e estrutura focados em Alta Conversão.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="#" class="floating-wa pulse-glow" data-wa-type="hero" id="floating-wa-btn" aria-label="Falar pelo WhatsApp">
+    <span class="floating-wa-badge"></span>
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
