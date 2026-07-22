@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       switch (type) {
         case 'hero':
-          text = "Olá Eduardo! Vi a landing page e gostaria de solicitar um orçamento para o meu evento de churrasco.";
+          text = "Olá Eduardo! Vi seu site e gostaria de solicitar um orçamento para o meu evento de churrasco.";
           break;
         case 'mao-de-obra':
           text = "Olá Eduardo! Gostaria de consultar a diária e condições do 'Pacote Mão de Obra Master' (assadores e garçons).";
