@@ -71,35 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return `https://wa.me/${basePhone}?text=${encodeURIComponent(message)}`;
   }
 
-  // Set default WhatsApp link messages for specific CTAs
-  const waCtas = document.querySelectorAll('[data-wa-type]');
-  waCtas.forEach(cta => {
-    cta.addEventListener('click', (e) => {
-      const type = cta.getAttribute('data-wa-type');
-      let text = "Olá Eduardo! Gostaria de solicitar um orçamento sem compromisso para o meu evento.";
-
-      switch (type) {
-        case 'hero':
-          text = "Olá Eduardo! Vi seu site e gostaria de solicitar um orçamento para o meu evento de churrasco.";
-          break;
-        case 'mao-de-obra':
-          text = "Olá Eduardo! Gostaria de consultar a diária e condições do 'Pacote Mão de Obra Master' (assadores e garçons).";
-          break;
-        case 'tradicional':
-          text = "Olá Eduardo! Tenho interesse no 'Buffet Churrasco Tradicional & Espetinhos'. Pode me enviar opções de valores?";
-          break;
-        case 'fogo-de-chao':
-          text = "Olá Eduardo! Gostaria de um orçamento especial para o cardápio 'Experiência Premium - Fogo de Chão & Defumados'.";
-          break;
-        case 'duvida':
-          text = "Olá Eduardo! Tenho algumas dúvidas sobre o atendimento na minha região e gostaria de conversar.";
-          break;
-      }
-
-      window.open(createWaUrl(text), '_blank');
-    });
-  });
-
   // 5. Interactive Guest Calculator Logic
   const guestBtns = document.querySelectorAll('#calc-guests-group .calc-btn');
   const typeBtns = document.querySelectorAll('#calc-type-group .calc-btn');
@@ -122,7 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const info = calcMap[selectedGuests] || calcMap["20-30"];
     resultHeading.textContent = `Festa para ${selectedGuests} pessoas (${selectedType})`;
     resultDetail.textContent = `🥩 ${info.meat} de Carnes Nobres • 🥗 Buffet completo em Rechauds Inox • 👨‍🍳 ${info.staff}`;
+    
+    if (calcWaBtn) {
+      const msg = `Olá Eduardo! Usei o simulador no site e gostaria de um orçamento para o meu evento: Festa para ${selectedGuests} pessoas (${selectedType}).`;
+      calcWaBtn.setAttribute('href', createWaUrl(msg));
+    }
   }
+
+  // Initialize calculator href
+  updateCalculatorView();
 
   guestBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -141,11 +120,4 @@ document.addEventListener('DOMContentLoaded', () => {
       updateCalculatorView();
     });
   });
-
-  if (calcWaBtn) {
-    calcWaBtn.addEventListener('click', () => {
-      const msg = `Olá Eduardo! Usei o simulador no site e gostaria de um orçamento para o meu evento: Festa para ${selectedGuests} pessoas (${selectedType}).`;
-      window.open(createWaUrl(msg), '_blank');
-    });
-  }
 });
